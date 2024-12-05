@@ -13,6 +13,7 @@ jobs:
   release:
     name: Release pushed tag
     runs-on: ubuntu-latest
+
     steps:
       - name: Create release
         env:
@@ -21,5 +22,5 @@ jobs:
         run: |
           gh release create "$tag" \
               --repo="$GITHUB_REPOSITORY" \
-              --title="${tag#v}" \
+              --title="Release ${tag#v}" \
               --generate-notes
