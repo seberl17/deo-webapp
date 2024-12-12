@@ -17,7 +17,7 @@ spec:
       # - name: ghcr-login-secret
       containers:
       - name: deo-backend
-        image: forgejo.deadlock.at/seberl17/deo-backend:latest
+        image: ghcr.io/seberl17/deo-webapp-backend:latest
         args: ["--urls", "http://*:3000"]
         ports:
         - containerPort: 3000
