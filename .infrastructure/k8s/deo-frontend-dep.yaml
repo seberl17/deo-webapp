@@ -17,7 +17,7 @@ spec:
       # - name: ghcr-login-secret
       containers:
       - name: deo-frontend
-        image: ghcr.io/seberl17/deo-webapp-frontend:latest
+        image: ghcr.io/seberl17/deo-webapp-frontend:v1.2.0
         args: ["--urls", "http://*:2000"]
         ports:
         - containerPort: 2000
